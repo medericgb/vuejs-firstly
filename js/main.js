@@ -15,11 +15,11 @@ const app = Vue.createApp({
       const { results } = await (await res).json();
       console.log(results);
 
-      this.firstname = "Sam";
-      this.lastname = "Smith";
-      this.email = "samsmith@mail.com";
-      this.gender = "female";
-      this.picture = "https://randomuser.me/api/portraits/women/10.jpg";
+      this.firstname = results[0].name.first;
+      this.lastname = results[0].name.last;
+      this.email = results[0].email;
+      this.gender = results[0].gender;
+      this.picture = results[0].picture.large;
     },
   },
 });

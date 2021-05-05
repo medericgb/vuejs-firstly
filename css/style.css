@@ -36,6 +36,11 @@ button {
   background-color: pink;
 }
 
+img {
+  border-radius: 50%;
+  border: 7px solid blueviolet;
+}
+
 button:hover {
   border: none;
   height: 50px;
