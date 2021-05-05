@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+
+:root {
+  font-family: Nunito;
+  font-size: 18px;
+}
+
+body {
+  /* background-color: cyan; */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  text-align: center;
+}
+
+button {
+  border: none;
+  height: 50px;
+  width: 160px;
+  font-weight: bold;
+  color: beige;
+  background-color: blue;
+}
+
+.male {
+  background-color: blueviolet;
+}
+
+.female {
+  background-color: pink;
+}
+
+button:hover {
+  border: none;
+  height: 50px;
+  width: 160px;
+  font-weight: bold;
+  color: beige;
+  background-color: blueviolet;
+}

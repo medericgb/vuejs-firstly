@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS</title>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <img :src="picture" :alt="`${firstname} ${lastname}`" height="200" width="200">
+        <h1>Bienvenudo {{ firstname }} {{ lastname }} !</h1>
+        <h3>Email: {{ email }}</h3>
+        <button v-on:click="getUser()" :class="gender">Get Random User</button>
+    </div>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
