@@ -12,7 +12,7 @@ const app = Vue.createApp({
   methods: {
     async getUser() {
       const res = fetch("https://randomuser.me/api");
-      const { results } = await (await res).json();
+      const { results } = await res.json();
       console.log(results);
 
       this.firstname = results[0].name.first;
